@@ -5,32 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>よりそいAI｜文章解説</title>
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="app.css?v=8">
 </head>
 <body>
   <main class="phone scene">
     <div class="maps" aria-hidden="true">
-      <span class="road-h"></span>
-      <span class="road-v"></span>
-      <span class="map-pin"></span>
+      <span class="street s1"></span>
+      <span class="street s2"></span>
+      <span class="street s3"></span>
+      <span class="block" style="left:8%;top:20%;width:18%;height:12%"></span>
+      <span class="block" style="left:58%;top:24%;width:22%;height:14%"></span>
+      <span class="block" style="left:12%;top:68%;width:28%;height:10%"></span>
     </div>
-    <div class="ios-status dark">
+    <div class="ios-status light">
       <span>9:41</span>
       <div class="right" aria-hidden="true">
-        <svg width="18" height="12" viewBox="0 0 18 12"><rect x="0" y="7" width="3" height="5" rx="0.6" fill="#000"/><rect x="4.5" y="5" width="3" height="7" rx="0.6" fill="#000"/><rect x="9" y="2.5" width="3" height="9.5" rx="0.6" fill="#000"/><rect x="13.5" y="0" width="3" height="12" rx="0.6" fill="#000"/></svg>
-        <svg width="16" height="12" viewBox="0 0 16 12"><path d="M1.2 8.2a8.2 8.2 0 0 1 13.6 0M3.6 10a5.2 5.2 0 0 1 8.8 0" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="11.2" r="1" fill="#000"/></svg>
-        <svg width="27" height="13" viewBox="0 0 27 13"><rect x="0.6" y="1" width="22" height="11" rx="2.4" stroke="#000" fill="none" stroke-width="1.2"/><rect x="2.2" y="2.6" width="16.8" height="7.8" rx="1.2" fill="#000"/><rect x="23.6" y="4.2" width="2.2" height="4.6" rx="0.7" fill="#000"/></svg>
+        <svg width="18" height="12" viewBox="0 0 18 12"><rect x="0" y="7" width="3" height="5" rx="0.6" fill="#fff"/><rect x="4.5" y="5" width="3" height="7" rx="0.6" fill="#fff"/><rect x="9" y="2.5" width="3" height="9.5" rx="0.6" fill="#fff"/><rect x="13.5" y="0" width="3" height="12" rx="0.6" fill="#fff"/></svg>
+        <svg width="16" height="12" viewBox="0 0 16 12"><path d="M1.2 8.2a8.2 8.2 0 0 1 13.6 0M3.6 10a5.2 5.2 0 0 1 8.8 0" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="11.2" r="1" fill="#fff"/></svg>
+        <svg width="27" height="13" viewBox="0 0 27 13"><rect x="0.6" y="1" width="22" height="11" rx="2.4" stroke="#fff" fill="none" stroke-width="1.2"/><rect x="2.2" y="2.6" width="16.8" height="7.8" rx="1.2" fill="#fff"/><rect x="23.6" y="4.2" width="2.2" height="4.6" rx="0.7" fill="#fff"/></svg>
       </div>
     </div>
-    <div class="search">マップを検索</div>
-    <section class="dialog" aria-label="位置情報の許可ポップアップ">
-      <div class="copy">
-        <h1>位置情報の使用を許可しますか？</h1>
-        <p>このアプリが位置情報を使用することを許可しますか？</p>
+    <div class="search-ios">
+      <svg class="mag" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16.5 21 21.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <b>ここで検索</b>
+      <span class="search-tools" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 11a5.5 5.5 0 0 0 11 0M12 16.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </span>
+    </div>
+    <section class="sheet" aria-label="位置情報の許可ポップアップ">
+      <div class="app-ico" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 24 24"><path fill="#fff" d="M12 3.2 4.8 19.4l.9.4 2.6-1 1.7 3.3 1.6-.8-1.7-3.3L12 17.2l7.2 2.2.9-.4L12 3.2z"/></svg>
       </div>
-      <div class="btns">
-        <span class="deny">許可しない</span>
-        <span class="allow">許可</span>
+      <h1>「マップ」に位置情報の使用を許可しますか？</h1>
+      <p class="desc">このアプリが位置情報を使用することを許可しますか？許可すると、あなたの現在地が取得されます。</p>
+      <div class="mini-map" aria-hidden="true">
+        <span class="precise">
+          <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path fill="#007aff" d="M12 3.2 4.8 19.4l.9.4 2.6-1 1.7 3.3 1.6-.8-1.7-3.3L12 17.2l7.2 2.2.9-.4L12 3.2z"/></svg>
+          正確な位置情報: オン
+        </span>
+        <span class="dot"></span>
+      </div>
+      <div class="sheet-btns">
+        <span>1度だけ許可</span>
+        <span>アプリの使用中は許可</span>
+        <span>許可しない</span>
       </div>
     </section>
     <section class="coach" aria-label="よりそいAIの解説">
@@ -43,6 +61,20 @@
         <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.2L12 18.6V5.4L7.2 9.5H4z" fill="#fff"/><path d="M15.2 8.5a4.2 4.2 0 0 1 0 7M17.6 6.4a7.2 7.2 0 0 1 0 11.2" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
       </button>
     </section>
+    <div class="map-tabs" aria-hidden="true">
+      <span class="on">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8c-3.4 0-6.2 2.6-6.2 6.1 0 4.6 6.2 12.3 6.2 12.3s6.2-7.7 6.2-12.3c0-3.5-2.8-6.1-6.2-6.1zm0 8.3a2.2 2.2 0 1 1 0-4.4 2.2 2.2 0 0 1 0 4.4z"/></svg>
+        スポット
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M7 4.5h10v15l-5-3.2-5 3.2z"/></svg>
+        保存済み
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 6v12M6 12h12"/></svg>
+        投稿
+      </span>
+    </div>
     <div class="home-ind" aria-hidden="true"><span></span></div>
   </main>
 </body>

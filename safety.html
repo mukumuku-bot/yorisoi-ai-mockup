@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>よりそいAI｜安全性検査</title>
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="app.css?v=8">
 </head>
 <body>
   <main class="phone scene messages">
@@ -17,17 +17,25 @@
         <svg width="27" height="13" viewBox="0 0 27 13"><rect x="0.6" y="1" width="22" height="11" rx="2.4" stroke="#000" fill="none" stroke-width="1.2"/><rect x="2.2" y="2.6" width="16.8" height="7.8" rx="1.2" fill="#000"/><rect x="23.6" y="4.2" width="2.2" height="4.6" rx="0.7" fill="#000"/></svg>
       </div>
     </div>
-    <header class="sms-top">
-      <span class="back" aria-hidden="true">‹</span>
-      <h1>090-4482-1937</h1>
-      <p>メッセージ</p>
+    <header class="imsg-head">
+      <span class="imsg-back" aria-hidden="true">
+        <svg width="11" height="18" viewBox="0 0 11 18"><path d="M9.2 1.6 1.8 9l7.4 7.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        27
+      </span>
+      <div class="avatar" aria-hidden="true">
+        <svg viewBox="0 0 64 48"><circle cx="32" cy="14" r="12" fill="#aeb6c2"/><path d="M8 48c2-16 14-24 24-24s22 8 24 24" fill="#aeb6c2"/></svg>
+      </div>
+      <div class="num-pill">+81 90 4482 1937 <em>›</em></div>
+      <p class="kind">テキストメッセージ・SMS</p>
     </header>
     <div class="thread">
-      <p class="when">今日 9:41</p>
+      <p class="when">昨日 19:33</p>
       <div class="bubble">
         お荷物をお届けしましたが、不在のため持ち帰りました。以下のURLからご確認ください。
         <span class="url">https://example.jp/xxxxx</span>
       </div>
+      <p class="warn">不明な差出人からのこのメッセージに心当たりがない場合は、迷惑メッセージの可能性があります。</p>
+      <span class="report">迷惑メッセージを報告</span>
     </div>
     <section class="alert" aria-label="AIによる安全性検査の結果">
       <p class="src">よりそいAI　安全性検査</p>
@@ -41,6 +49,16 @@
       <p class="label">おすすめの対応</p>
       <p class="act">URLを開かず、公式サイトから配送状況を確認してください。</p>
     </section>
+    <div class="imsg-comp" aria-hidden="true">
+      <div class="plus">+</div>
+      <div class="comp-fields">
+        <div class="sub">件名</div>
+        <div class="comp-row">
+          <span>テキストメッセージ・SMS</span>
+          <svg width="18" height="18" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3" fill="#c7c7cc"/><path d="M6.5 11a5.5 5.5 0 0 0 11 0M12 16.5V20" fill="none" stroke="#c7c7cc" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </div>
     <div class="home-ind" aria-hidden="true"><span></span></div>
   </main>
 </body>
