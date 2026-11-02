@@ -372,10 +372,11 @@ body {
 .ico-weather { background: linear-gradient(180deg, #5ac8fa, #007aff); }
 .ico-game { background: linear-gradient(180deg, #bf5af2, #af52de); }
 .ico-cam { background: linear-gradient(180deg, #8e8e93, #636366); }
+.home-grid { flex: 1; }
 .dock {
   position: relative;
   z-index: 2;
-  margin: 0 16px 8px;
+  margin: auto 16px 8px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
@@ -391,18 +392,19 @@ body {
 
 .coach {
   position: relative;
-  z-index: 7;
-  margin: auto 12px 8px;
-  background: rgba(255, 255, 255, 0.94);
+  z-index: 12;
+  margin: 4px 12px 12px;
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 18px;
   padding: 14px 14px 14px 16px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
   display: grid;
-  grid-template-columns: 1fr 52px;
+  grid-template-columns: minmax(0, 1fr) 52px;
   gap: 10px;
   align-items: start;
+  flex-shrink: 0;
 }
 .coach .who {
   font-size: 13px;
@@ -429,8 +431,8 @@ body {
 }
 .inset {
   position: absolute;
-  right: 10px;
-  top: 118px;
+  right: 12px;
+  top: 308px;
   width: 198px;
   background: rgba(245, 245, 247, 0.94);
   backdrop-filter: blur(24px);
@@ -482,6 +484,7 @@ body {
   border-radius: 4px;
 }
 .search-ios {
+  display: none;
   position: absolute;
   left: 12px;
   right: 12px;
@@ -509,7 +512,7 @@ body {
 .sheet {
   position: relative;
   z-index: 5;
-  margin: 104px 16px 10px;
+  margin: 8px 16px auto;
   background: rgba(245, 245, 247, 0.94);
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
@@ -722,14 +725,15 @@ body {
   font-weight: 600;
 }
 .alert {
-  margin: 4px 12px 8px;
+  margin: 4px 12px 10px;
   background: #fff;
   border-radius: 18px;
   padding: 12px 14px 12px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
   border: 1px solid #ff3b30;
   position: relative;
-  z-index: 3;
+  z-index: 12;
+  flex-shrink: 0;
 }
 .alert .badge {
   display: inline-block;

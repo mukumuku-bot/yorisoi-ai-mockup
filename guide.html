@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>よりそいAI｜操作支援</title>
-  <link rel="stylesheet" href="app.css?v=8">
+  <link rel="stylesheet" href="app.css?v=9">
 </head>
 <body>
   <main class="phone scene">
@@ -18,6 +18,16 @@
         <svg width="27" height="13" viewBox="0 0 27 13"><rect x="0.6" y="1" width="22" height="11" rx="2.4" stroke="#fff" fill="none" stroke-width="1.2"/><rect x="2.2" y="2.6" width="16.8" height="7.8" rx="1.2" fill="#fff"/><rect x="23.6" y="4.2" width="2.2" height="4.6" rx="0.7" fill="#fff"/></svg>
       </div>
     </div>
+    <section class="coach" aria-label="よりそいAIの案内">
+      <div>
+        <p class="who">よりそいAI　操作支援</p>
+        <h2>ゲームアプリを長押ししてください。</h2>
+        <p>アイコンを指で押し続けてください。<br>続いて「Appを削除」を選んでください。</p>
+      </div>
+      <button type="button" class="speak" aria-label="音声で案内">
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.2L12 18.6V5.4L7.2 9.5H4z" fill="#fff"/><path d="M15.2 8.5a4.2 4.2 0 0 1 0 7M17.6 6.4a7.2 7.2 0 0 1 0 11.2" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </section>
     <div class="home-grid" aria-label="iPhoneのホーム画面">
       <div class="tile"><span class="mark ico-map"><svg viewBox="0 0 24 24"><path d="M12 21s6-5.4 6-10.2A6 6 0 0 0 6 10.8C6 15.6 12 21 12 21z"/><circle cx="12" cy="10.8" r="1.8" fill="#fff" stroke="none"/></svg></span><span>地図</span></div>
       <div class="tile"><span class="mark ico-clock"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4.4l3 1.8"/></svg></span><span>時計</span></div>
@@ -33,16 +43,6 @@
       <div class="row">編集</div>
       <div class="row danger">Appを削除</div>
     </aside>
-    <section class="coach" aria-label="よりそいAIの案内">
-      <div>
-        <p class="who">よりそいAI　操作支援</p>
-        <h2>ゲームアプリを長押ししてください。</h2>
-        <p>アイコンを指で押し続けてください。<br>続いて「Appを削除」を選んでください。</p>
-      </div>
-      <button type="button" class="speak" aria-label="音声で案内">
-        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.2L12 18.6V5.4L7.2 9.5H4z" fill="#fff"/><path d="M15.2 8.5a4.2 4.2 0 0 1 0 7M17.6 6.4a7.2 7.2 0 0 1 0 11.2" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
-      </button>
-    </section>
     <div class="dock" aria-hidden="true">
       <div class="tile"><span class="mark ico-call"><svg viewBox="0 0 24 24"><path d="M6.6 3.8h3.1l1 4.1-2 1.2a12.5 12.5 0 0 0 6.2 6.2l1.2-2 4.1 1v3.1c0 .9-.7 1.6-1.6 1.6C10.4 19 5 13.6 5 5.4 5 4.5 5.7 3.8 6.6 3.8z"/></svg></span><span>電話</span></div>
       <div class="tile"><span class="mark ico-photo"><svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><circle cx="9" cy="10.2" r="1.5"/><path d="m7.5 16.5 3.4-3.6 2.4 2.4 2.2-2.3 3.5 3.5"/></svg></span><span>写真</span></div>
