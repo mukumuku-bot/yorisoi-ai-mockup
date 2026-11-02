@@ -416,7 +416,6 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.35;
-  margin-bottom: 6px;
 }
 .coach p { font-size: 15px; color: #3c3c43; line-height: 1.5; }
 .speak {
@@ -432,7 +431,7 @@ body {
 .inset {
   position: absolute;
   right: 12px;
-  top: 308px;
+  top: 268px;
   width: 198px;
   background: rgba(245, 245, 247, 0.94);
   backdrop-filter: blur(24px);
