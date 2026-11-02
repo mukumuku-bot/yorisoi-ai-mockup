@@ -1,0 +1,10 @@
+mockups/.edge-profile/
+mockups/live-*.png
+__pycache__/
+~$*.pptx
+*.pptx
+make_images.py
+make_slide01.py
+01_プランの概要.png
+01_プランの概要.pptx
+

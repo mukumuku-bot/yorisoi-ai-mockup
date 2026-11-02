@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>よりそいAI｜操作支援</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <main class="phone">
+    <div class="top">
+      <header class="appbar">
+        <a class="back" href="consult.html" aria-label="前の画面に戻る">
+          <svg width="22" height="22" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div>
+          <p class="app-name">よりそいAI</p>
+          <p class="screen-name">操作支援</p>
+        </div>
+        <button type="button" class="settings" aria-label="設定・利用情報">
+          <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M10.1 2.3h3.8l.35 2.15c.62.2 1.2.5 1.73.9l2.15-.85 1.9 3.25-1.75 1.35c.12.5.2 1.02.2 1.55s-.08 1.05-.2 1.55l1.75 1.35-1.9 3.25-2.15-.85c-.53.4-1.11.7-1.73.9l-.35 2.15h-3.8l-.35-2.15c-.62-.2-1.2-.5-1.73-.9l-2.15.85-1.9-3.25 1.75-1.35A6.7 6.7 0 0 1 5 12c0-.53.08-1.05.2-1.55L3.45 9.1l1.9-3.25 2.15.85c.53-.4 1.11-.7 1.73-.9L10.1 2.3Zm1.9 6.3A3.4 3.4 0 1 0 12 15.5 3.4 3.4 0 0 0 12 8.6Z"/></svg>
+          <span>設定</span>
+        </button>
+      </header>
+    </div>
+    <div class="chat">
+      <div class="user">LINEがなんだか変になった。</div>
+      <div class="ai">
+        <p>どのような状態ですか？</p>
+        <p class="sub">近いものを選んでください。</p>
+      </div>
+      <a class="choice" href="#">メッセージが送れない<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="choice" href="#">画面の表示がいつもと違う<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="choice" href="#">通知が届かなくなった<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="choice" href="#">よく分からない<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="composer">
+      <div class="field">近いものがなければ、ここに書く</div>
+      <button type="button" class="mic" aria-label="音声で話す">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" fill="#fff"/><path d="M6.5 11a5.5 5.5 0 0 0 11 0M12 16.5V20" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+        話す
+      </button>
+    </div>
+  </main>
+</body>
+</html>
