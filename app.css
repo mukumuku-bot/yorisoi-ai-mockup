@@ -237,7 +237,9 @@ body {
 .card .meta { padding: 14px 16px 16px; }
 .card h2 { font-size: 18px; margin-bottom: 4px; }
 .card p { font-size: 14px; color: var(--muted); line-height: 1.5; }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
+  .cards { grid-template-columns: 1fr 1fr 1fr; }
+}
+@media (min-width: 700px) and (max-width: 899px) {
   .cards { grid-template-columns: 1fr 1fr; }
-  .cards .card:first-child { grid-column: 1 / -1; }
 }
